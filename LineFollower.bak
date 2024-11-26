@@ -1,0 +1,95 @@
+//  Made by
+//  Mehmet Turan Yardimci
+//  Meryem Azra Deniz
+
+#include "NXCDefs.h"
+#define LIGHT_SENSOR_PORT S4
+#define MOTOR_Left OUT_C  // Left motor 20
+#define MOTOR_Right OUT_A  // Right motor 30
+
+long t0, passedTime;  // To hold start and end times
+int countdown = 0; // Countdown for dT calculation
+int lightValue = 0;  // Sensor light value
+
+// Estimated sensor reading Black = 180, White 460
+int offset = 320;  // Offset = 460+180/2 = 320
+float error = 0;  // Error (Values-Offset) = -140 <-> +140
+int lastError = 0;
+float targetPowerR = 30;  // TargetPower is power level of motors when the robot supposed to go straight ahead
+float targetPowerL = 20;
+float powerL = 0;
+float powerR = 0;
+float turnL = 0;
+float turnR = 0;
+
+// kpL = (0 - 20) / (-140 - 0) = 0.142857 (We want to change motor value 20 to 0, when error changes 0 to -140)
+float kpL = 0.30;  // If it can't follow the line and wanders off then increase Kp. If it oscillates wildly then decrease Kp
+
+// Constant for the proportional controller (kp) and estimations for it;
+// kpR = (0 - 30) / (-140 - 0) = 0.214285 (We want to change motor value 30 to 0, when error changes 0 to -140)
+float kpR = 0.30;  // If it can't follow the line and wanders off then increase Kp. If it oscillates wildly then decrease Kp
+
+float integral = 0;  // Cumulative history of errors (birikerek artmasi)
+float ki = 0.00;  // Integrals constant
+
+float derivative = 0;  // To counter the error change direction
+float kd = 3.00;  // Derivatives constant
+
+// To tune these constants using the Ziegler–Nichols method giving K' values table;
+// Control Type Kp        Ki'           Kd'
+// P           0.50Kc    0             0
+// PI           0.45Kc    1.2KpdT /Pc   0
+// PD           0.80Kc    0             KpPc /(8dT)
+// PID         0.60Kc     2KpdT /Pc     KpPc /(8dT)
+
+// Kp avg. = 0.15, Kc = best Kp value when robot oscilate but not wildly
+
+//(Pc) Calculate Pc, at the best Kp values to you. Will probably be in the range of about 0.5 seconds to a second or two.
+//(dT) Calculate the time per loop as dT. Measured time / Number of loops. Probably 0.015 to 0.020 seconds per loop.
+
+task main() {
+          OnFwd(OUT_C, targetPowerL);
+          OnFwd(OUT_A, targetPowerR);
+          SetSensorColorFull(S4);
+          t0 = CurrentTick();
+
+          while(!ButtonPressed(3,1)) {
+            countdown++;
+            ColorSensorReadType csr;
+            csr.Port = S4;
+            SysColorSensorRead(csr);
+
+            if (csr.Result == NO_ERR) {
+              int lightValue  = (csr.RawArray[0] + csr.RawArray[1] + csr.RawArray[2])/3;
+              lastError = error;
+              error = lightValue - offset;
+
+              if ( (lastError < 0 && error > 0) || (lastError > 0 && error < 0) ) {  // Check if error changed its sign
+                 integral = 0;
+              }
+
+              integral = integral + error;  // There is no time in equation because time change is constant
+
+              derivative = error - lastError;
+
+              turnL = kpL * error + ki * integral + kd * derivative;
+              turnR = kpR * error + ki * integral + kd * derivative;
+
+              powerL = targetPowerL - turnL;
+              powerR = targetPowerR + turnR;
+
+              OnFwd(MOTOR_Left, powerL);
+              OnFwd(MOTOR_Right, powerR);
+
+            }
+            else {
+              continue;
+            }
+
+          }
+
+          Off(OUT_AC);
+          passedTime = CurrentTick() - t0;
+          TextOut(0, LCD_LINE1, "END");
+          Wait(9000);
+}

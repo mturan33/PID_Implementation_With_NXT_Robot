@@ -1,0 +1,445 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	targetPowerR	10	0	0	4	2
+1	error	10	1	4	4	8
+2	powerL	10	1	8	4	2
+3	targetPowerL	10	0	12	4	2
+4	passedTime	6	1	16	4	2
+5	__unsigned_stack_001main	5	1	20	4	8
+6	__signed_stack_003main	6	1	24	4	2
+7	t0	6	1	28	4	2
+8	__float_stack_001main	10	1	32	4	14
+9	powerR	10	1	36	4	2
+10	derivative	10	1	40	4	3
+11	ki	10	1	44	4	2
+12	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	48	4	2
+13	kd	10	1	52	4	2
+14	integral	10	1	56	4	5
+15	turnR	10	1	60	4	2
+16	turnL	10	1	64	4	2
+17	kpR	10	0	68	4	1
+18	kpL	10	0	72	4	1
+19	__signed_stack_002main	6	1	76	4	8
+20	__DU0main	5	1	80	4	4
+21	__D0main	6	1	84	4	42
+22	__DF0main	10	1	88	4	20
+23	__signed_stack_001main	6	1	92	4	18
+24	offset	4	0	96	2	1
+25	lastError	4	1	98	2	4
+26	__main_7qG2_lightValue_7qG2_002	4	1	100	2	2
+27	countdown	4	1	102	2	3
+28	__ResetSensorPort	1	1	104	1	3
+29	__ResetSensorTmp	1	1	105	1	2
+30	____ResetSensorSubroutine_return	1	1	106	1	3
+31	__constVal3	2	0	107	1	4
+32	____initialize_global_data_return	1	1	108	1	3
+33	__constVal1	2	0	109	1	2
+34	__constVal0	2	1	110	1	17
+35	__constVal13	2	0	111	1	1
+36	__constVal63	2	0	112	1	4
+37	__constVal32	2	0	113	1	12
+38	__SetSensorColorFull_7qG2_port_7qG2_000_inline_main	1	1	114	1	4
+39	__constVal2	2	0	115	1	2
+40	__constVal96	2	0	116	1	4
+41	__main_7qG2_csr_7qG2_001	8	0	7	20	7
+42	__main_7qG2_csr_7qG2_001.Result	2	1	120	1	7
+43	__main_7qG2_csr_7qG2_001.Port	1	1	121	1	7
+44	__main_7qG2_csr_7qG2_001.ColorValue	4	1	122	2	7
+45	__main_7qG2_csr_7qG2_001.RawArray	7	0	124	4	7
+46	__main_7qG2_csr_7qG2_001.RawArray.RawArray_type	3	0	0	2	0
+47	__main_7qG2_csr_7qG2_001.NormalizedArray	7	0	126	4	7
+48	__main_7qG2_csr_7qG2_001.NormalizedArray.NormalizedArray_type	3	0	0	2	0
+49	__main_7qG2_csr_7qG2_001.ScaledArray	7	0	128	4	7
+50	__main_7qG2_csr_7qG2_001.ScaledArray.ScaledArray_type	4	0	0	2	0
+51	__main_7qG2_csr_7qG2_001.Invalid	1	1	130	1	7
+52	__RBtnArgs	8	0	5	8	4
+53	__RBtnArgs.Result	2	1	132	1	4
+54	__RBtnArgs.Index	1	1	133	1	4
+55	__RBtnArgs.Pressed	1	1	134	1	4
+56	__RBtnArgs.Count	1	1	135	1	4
+57	__RBtnArgs.Reset	1	1	136	1	4
+58	__TextOutArgs	8	0	4	16	12
+59	__TextOutArgs.Result	2	1	140	1	12
+60	__TextOutArgs.Location	8	0	2	4	12
+61	__TextOutArgs.Location.X	4	1	144	2	12
+62	__TextOutArgs.Location.Y	4	1	146	2	12
+63	__TextOutArgs.Text	7	0	148	4	12
+64	__TextOutArgs.Text.Text_type	1	0	0	1	0
+65	__TextOutArgs.Options	5	1	152	4	12
+66	__constStr0009	7	0	156	4	1
+67	__constStr0009.__constStr0009_type	1	1	0	1	0
+68	__constStr0010	7	0	158	4	1
+69	__constStr0010.__constStr0010_type	1	1	0	1	0
+70	__strretvalmain	7	0	160	4	2
+71	__strretvalmain.__strretvalmain_type	1	0	0	1	0
+72	__ArrHelper__main_244_0	7	0	162	4	2
+73	__ArrHelper__main_244_0.__ArrHelper__main_244_0_type	1	0	0	1	0
+74	__ArrHelper__main_244_1	7	0	164	4	2
+75	__ArrHelper__main_244_1.__ArrHelper__main_244_1_type	1	0	0	1	0
+76	__strbufmain	7	0	166	4	6
+77	__strbufmain.__strbufmain_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	46	0	#line 46 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	47	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	46	2	#line 46 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	46	2	#line 46 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	47	2		set __SetSensorColorFull_7qG2_port_7qG2_000_inline_main, 0
+0	46	5	#line 46 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	4386	5	#line 4386 "NXCDefs.h"
+0	4387	5	#pragma macro 6
+0	4387	5		setin __constVal13, __SetSensorColorFull_7qG2_port_7qG2_000_inline_main, 0
+0	4387	9		setin __constVal0, __SetSensorColorFull_7qG2_port_7qG2_000_inline_main, 1
+0	4387	13		mov __ResetSensorPort, __SetSensorColorFull_7qG2_port_7qG2_000_inline_main
+0	4387	15		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	5969	17	#line 5969 "NXCDefs.h"
+0	4386	17	#line 4386 "NXCDefs.h"
+0	47	17	#line 47 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	47	17	#line 47 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	48	17		gettick t0
+0	47	19	#line 47 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	47	19	#line 47 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	47	19	#line 47 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	49	19	#line 49 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	50	19		mov __DF0main, targetPowerL
+0	50	21	#line 50 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	51	21	#pragma macro 7
+0	51	21		setout __constVal0, 2, __DF0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	5985	44	#line 5985 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	50	44	#line 50 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	50	44	#line 50 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	51	44		mov __DF0main, targetPowerR
+0	52	46	#line 52 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	53	46	#pragma macro 7
+0	53	46		setout __constVal2, 2, __DF0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	5992	69	#line 5992 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	52	69	#line 52 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	52	69	#line 52 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	53	69		set __signed_stack_001main, 3
+0	52	72	#line 52 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	52	72	#line 52 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	53	72		set __D0main, 1
+0	52	75	#line 52 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	52	75	#line 52 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	53	75		mov __RBtnArgs.Index, __signed_stack_001main
+0	52	77	#line 52 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	53	77		mov __RBtnArgs.Reset, __D0main
+0	52	79	#line 52 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	53	79		syscall 20, __RBtnArgs
+0	52	82	#line 52 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	53	82		mov __D0main, __RBtnArgs.Pressed
+0	52	84	#line 52 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	52	84	#line 52 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	53	84		not __D0main, __D0main
+0	52	87	#line 52 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	53	87		tst 5, __D0main, __D0main
+0	52	90	#line 52 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	53	90		brtst 4, __ASM_Label_615, __D0main
+0	52	93	#line 52 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	53	93		mov __signed_stack_001main, countdown
+0	52	95	#line 52 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	52	95	#line 52 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	53	95		set __D0main, 10000
+0	52	98	#line 52 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	53	98		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	53	102	#line 53 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	54	102		brtst 4, __ASM_Label_613, __D0main
+0	55	105	#line 55 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	56	105		add countdown, countdown, __constVal1
+0	55	109	#line 55 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	57	109	#line 57 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	58	109		set __main_7qG2_csr_7qG2_001.Port, 0
+0	57	112	#line 57 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	57	112	#line 57 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	58	112	#line 58 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	59	112	#pragma macro 4
+0	59	112	#line 59 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	59	112		syscall 34, __main_7qG2_csr_7qG2_001
+0	57	115	#line 57 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	57	115	#line 57 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	57	115	#line 57 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	57	115	#line 57 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	59	115	#line 59 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	58	115	#line 58 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	59	115	#line 59 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	60	115		mov __signed_stack_001main, __main_7qG2_csr_7qG2_001.Result
+0	59	117	#line 59 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	59	117	#line 59 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	60	117		set __D0main, 0
+0	59	120	#line 59 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	60	120		cmp 4, __D0main, __signed_stack_001main, __D0main
+0	60	124	#line 60 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	61	124		brtst 4, __ASM_Label_624, __D0main
+0	60	127	#line 60 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	61	127		set __signed_stack_001main, 0
+0	60	130	#line 60 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	60	130	#line 60 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	61	130		index __unsigned_stack_001main, __main_7qG2_csr_7qG2_001.RawArray, __signed_stack_001main
+0	60	134	#line 60 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	60	134	#line 60 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	60	134	#line 60 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	61	134		set __signed_stack_002main, 1
+0	60	137	#line 60 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	60	137	#line 60 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	61	137		index __DU0main, __main_7qG2_csr_7qG2_001.RawArray, __signed_stack_002main
+0	60	141	#line 60 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	60	141	#line 60 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	61	141		add __unsigned_stack_001main, __unsigned_stack_001main, __DU0main
+0	60	145	#line 60 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	60	145	#line 60 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	61	145		set __signed_stack_002main, 2
+0	60	148	#line 60 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	60	148	#line 60 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	61	148		index __DU0main, __main_7qG2_csr_7qG2_001.RawArray, __signed_stack_002main
+0	60	152	#line 60 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	60	152	#line 60 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	61	152		add __unsigned_stack_001main, __unsigned_stack_001main, __DU0main
+0	60	156	#line 60 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	61	156	#line 61 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	62	156		set __D0main, 3
+0	61	159	#line 61 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	62	159		div __main_7qG2_lightValue_7qG2_002, __unsigned_stack_001main, __D0main
+0	61	163	#line 61 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	62	163	#line 62 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	63	163		mov lastError, error
+0	62	165	#line 62 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	62	165	#line 62 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	62	165	#line 62 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	63	165		mov __signed_stack_001main, __main_7qG2_lightValue_7qG2_002
+0	62	167	#line 62 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	64	167	#line 64 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	65	167		mov __D0main, offset
+0	64	169	#line 64 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	65	169		sub error, __signed_stack_001main, __D0main
+0	64	173	#line 64 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	64	173	#line 64 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	64	173	#line 64 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	65	173		mov __signed_stack_001main, lastError
+0	64	175	#line 64 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	64	175	#line 64 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	65	175		set __D0main, 0
+0	64	178	#line 64 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	65	178		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	64	182	#line 64 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	65	182		brtst 4, __ASM_Label_642, __D0main
+0	64	185	#line 64 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	65	185		mov __float_stack_001main, error
+0	64	187	#line 64 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	64	187	#line 64 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	65	187		mov __DF0main, __constVal0
+0	64	189	#line 64 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	65	189		cmp 1, __D0main, __float_stack_001main, __DF0main
+0	64	193	#line 64 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	65	193		brtst 5, __ASM_Label_639, __D0main
+0	64	196	#line 64 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	65	196		mov __signed_stack_001main, lastError
+0	64	198	#line 64 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	64	198	#line 64 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	65	198		set __D0main, 0
+0	64	201	#line 64 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	65	201		cmp 1, __D0main, __signed_stack_001main, __D0main
+0	64	205	#line 64 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	65	205		brtst 4, __ASM_Label_645, __D0main
+0	64	208	#line 64 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	65	208		mov __float_stack_001main, error
+0	64	210	#line 64 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	64	210	#line 64 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	65	210		mov __DF0main, __constVal0
+0	64	212	#line 64 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	65	212		cmp 0, __D0main, __float_stack_001main, __DF0main
+0	65	216	#line 65 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	66	216		brtst 4, __ASM_Label_646, __D0main
+0	66	219	#line 66 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	67	219		set __D0main, 0
+0	66	222	#line 66 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	67	222		mov integral, __D0main
+0	66	224	#line 66 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	68	224	#line 68 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	68	224	#line 68 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	68	224	#line 68 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	70	224	#line 70 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	70	224	#line 70 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	71	224		add integral, integral, error
+0	70	228	#line 70 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	70	228	#line 70 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	70	228	#line 70 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	71	228		mov __float_stack_001main, error
+0	70	230	#line 70 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	72	230	#line 72 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	73	230		mov __D0main, lastError
+0	72	232	#line 72 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	73	232		sub derivative, __float_stack_001main, __D0main
+0	72	236	#line 72 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	72	236	#line 72 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	72	236	#line 72 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	72	236	#line 72 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	72	236	#line 72 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	72	236	#line 72 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	73	236		mul __float_stack_001main, kpL, error
+0	72	240	#line 72 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	72	240	#line 72 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	72	240	#line 72 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	72	240	#line 72 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	72	240	#line 72 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	73	240		mul __DF0main, ki, integral
+0	72	244	#line 72 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	73	244		add __float_stack_001main, __float_stack_001main, __DF0main
+0	72	248	#line 72 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	72	248	#line 72 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	72	248	#line 72 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	73	248	#line 73 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	73	248	#line 73 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	74	248		mul __DF0main, kd, derivative
+0	73	252	#line 73 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	74	252		add turnL, __float_stack_001main, __DF0main
+0	73	256	#line 73 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	73	256	#line 73 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	73	256	#line 73 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	73	256	#line 73 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	73	256	#line 73 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	73	256	#line 73 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	74	256		mul __float_stack_001main, kpR, error
+0	73	260	#line 73 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	73	260	#line 73 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	73	260	#line 73 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	73	260	#line 73 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	73	260	#line 73 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	74	260		mul __DF0main, ki, integral
+0	73	264	#line 73 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	74	264		add __float_stack_001main, __float_stack_001main, __DF0main
+0	73	268	#line 73 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	73	268	#line 73 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	73	268	#line 73 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	75	268	#line 75 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	75	268	#line 75 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	76	268		mul __DF0main, kd, derivative
+0	75	272	#line 75 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	76	272		add turnR, __float_stack_001main, __DF0main
+0	75	276	#line 75 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	75	276	#line 75 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	75	276	#line 75 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	75	276	#line 75 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	76	276	#line 76 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	76	276	#line 76 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	77	276		add powerL, targetPowerL, turnL
+0	76	280	#line 76 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	76	280	#line 76 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	76	280	#line 76 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	76	280	#line 76 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	78	280	#line 78 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	78	280	#line 78 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	79	280		add powerR, targetPowerR, turnR
+0	78	284	#line 78 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	78	284	#line 78 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	78	284	#line 78 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	79	284		mov __DF0main, powerL
+0	79	286	#line 79 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	80	286	#pragma macro 7
+0	80	286		setout __constVal0, 2, __DF0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	6381	309	#line 6381 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	79	309	#line 79 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	79	309	#line 79 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	80	309		mov __DF0main, powerR
+0	81	311	#line 81 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	82	311	#pragma macro 7
+0	82	311		setout __constVal2, 2, __DF0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	6388	334	#line 6388 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	81	334	#line 81 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	83	334	#line 83 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	84	334		jmp __ASM_Label_665
+0	84	336	#line 84 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	85	336		jmp __ASM_Label_612
+0	84	338	#line 84 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	89	338	#line 89 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	89	338	#line 89 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	90	338		jmp __ASM_Label_612
+0	89	340	#line 89 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	89	340	#line 89 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	90	340		gettick __unsigned_stack_001main
+0	89	342	#line 89 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	91	342	#line 91 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	91	342	#line 91 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	92	342		sub passedTime, __unsigned_stack_001main, t0
+0	91	346	#line 91 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	91	346	#line 91 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	91	346	#line 91 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	91	346	#line 91 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	92	346		set __signed_stack_001main, 0
+0	91	349	#line 91 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	91	349	#line 91 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	92	349		set __signed_stack_002main, 56
+0	91	352	#line 91 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	91	352	#line 91 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	92	352		strcat __strbufmain, __constStr0009
+0	92	356	#line 92 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	92	356	#line 92 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	93	356		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	92	358	#line 92 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	93	358		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	92	360	#line 92 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	93	360		set __TextOutArgs.Options, 0
+0	92	363	#line 92 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	93	363		mov __TextOutArgs.Text, __strbufmain
+0	92	365	#line 92 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	93	365		syscall 13, __TextOutArgs
+0	92	368	#line 92 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	93	368		mov __D0main, __TextOutArgs.Result
+0	92	370	#line 92 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	92	370	#line 92 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	92	370	#line 92 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	93	370		set __signed_stack_001main, 0
+0	92	373	#line 92 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	92	373	#line 92 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	93	373		set __signed_stack_002main, 48
+0	92	376	#line 92 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	92	376	#line 92 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	93	376		mov __ArrHelper__main_244_0, __constStr0010
+0	92	378	#line 92 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	93	378		mov __signed_stack_003main, passedTime
+0	92	380	#line 92 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	92	380	#line 92 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	93	380		set __D0main, 10000
+0	92	383	#line 92 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	93	383		div __D0main, __signed_stack_003main, __D0main
+0	92	387	#line 92 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	93	387		numtostr __strretvalmain, __D0main
+0	92	390	#line 92 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	93	390		strcat __strbufmain, __strretvalmain
+0	92	394	#line 92 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	93	394		mov __ArrHelper__main_244_1, __strbufmain
+0	92	396	#line 92 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	93	396		strcat __strbufmain, __ArrHelper__main_244_0, __ArrHelper__main_244_1
+0	93	401	#line 93 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	93	401	#line 93 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	94	401		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	93	403	#line 93 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	94	403		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	93	405	#line 93 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	94	405		set __TextOutArgs.Options, 0
+0	93	408	#line 93 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	94	408		mov __TextOutArgs.Text, __strbufmain
+0	93	410	#line 93 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	94	410		syscall 13, __TextOutArgs
+0	93	413	#line 93 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	94	413		mov __D0main, __TextOutArgs.Result
+0	93	415	#line 93 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	93	415	#line 93 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	93	415	#line 93 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	94	415		set __Wait_7qG2_ms_7qG2_000_inline_main, 9000
+0	93	418	#line 93 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	8551	418	#line 8551 "NXCDefs.h"
+0	8552	418		waitv __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	420	#line 8551 "NXCDefs.h"
+0	94	420	#line 94 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+0	95	420		exit -1, -1
+1	5476	0		setin __constVal1, __ResetSensorPort, 5
+1	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	5480	11		subret ____ResetSensorSubroutine_return
+2	97	0	#line 97 "C:\Users\Turan\AppData\Local\Temp\temp.nxc"
+2	98	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\Turan\AppData\Local\Temp\temp.nxc
+1	__ResetSensorSubroutine	423	NXTDefs.h
+2	__initialize_global_data	436	C:\Users\Turan\AppData\Local\Temp\temp.nxc
